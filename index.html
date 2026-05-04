@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIESTA MUCHO | El Refugio del Perreo 2017</title>
+    <meta name="description" content="La fiesta de reggaetón y trap que extrañabas. Nostalgia 2016-2019. Perreo chic, estética urbana y pura vibra.">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="FIESTA MUCHO | Perreo 2017">
+    <meta property="og:description" content="Nostalgia 2016-2019. Trap-ton chic y pura vibra.">
+    <meta property="og:image" content="Flyers/Mucho-post.png">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;700;900&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="custom-cursor"></div>
+    <div class="custom-cursor-dot"></div>
+
+    <!-- Scroll Progress -->
+    <div class="scroll-progress"></div>
+
+    <div class="bg-glow glow-1"></div>
+    <div class="bg-glow glow-2"></div>
+    <div class="grain-overlay"></div>
+
+    <header id="main-header">
+        <nav class="nav-container">
+            <a href="#" class="nav-logo">
+                <img src="Logos/logo-violeta.png" alt="MUCHO Logo" id="header-logo">
+            </a>
+            <ul class="nav-links" role="menubar">
+                <li role="none"><a href="#tickets" class="nav-item btn-tickets sticker-btn" role="menuitem" aria-label="Comprar Tickets">TICKETS <span class="plus-icon">+</span></a></li>
+                <li role="none"><a href="#shoots" class="nav-item" role="menuitem">SHOOTS</a></li>
+                <li role="none"><a href="#playlist" class="nav-item" role="menuitem">PLAYLIST</a></li>
+                <li role="none"><a href="#nosotros" class="nav-item" role="menuitem">NOSOTROS</a></li>
+                <li role="none"><a href="#contacto" class="nav-item" role="menuitem">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <!-- Carrusel de fondo del Hero -->
+            <div class="hero-slideshow" id="heroSlideshow">
+                <div class="hero-slide active">
+                    <img src="img/PORTADA-HERO.png" alt="MUCHO Portada">
+                </div>
+                <div class="hero-slide">
+                    <img src="img/Banner2.png" alt="MUCHO Banner">
+                </div>
+            </div>
+            <!-- Dots de navegación -->
+            <div class="hero-dots" id="heroDots">
+                <span class="hero-dot active" data-index="0"></span>
+                <span class="hero-dot" data-index="1"></span>
+            </div>
+            <!-- Flechas de navegación manual -->
+            <button class="hero-arrow hero-arrow--prev" id="heroPrev" aria-label="Anterior">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+            </button>
+            <button class="hero-arrow hero-arrow--next" id="heroNext" aria-label="Siguiente">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
+            <div class="hero-content">
+                <a href="#tickets" class="cta-button sticker-btn" id="hero-ticket-btn">TICKETS <span class="plus-icon">+</span></a>
+            </div>
+            <div class="texture-bg"></div>
+        </section>
+
+        <!-- Banner movible: fotos + elementos de marca -->
+        <div class="hero-carousel-strip">
+            <div class="carousel-track">
+                <!-- Set 1 -->
+                <div class="carousel-slide carousel-slide--banner">
+                    <img src="img/Banner2.png" alt="MUCHO Banner">
+                </div>
+                <div class="carousel-slide carousel-slide--obj">
+                    <img src="Mockups/anillo.png" alt="Anillo MUCHO">
+                </div>
+                <div class="carousel-slide carousel-slide--obj">
+                    <img src="Mockups/espejo1.png" alt="Espejo MUCHO">
+                </div>
+                <div class="carousel-slide carousel-slide--banner">
+                    <img src="img/Banner2.png" alt="MUCHO Banner">
+                </div>
+                <div class="carousel-slide carousel-slide--obj">
+                    <img src="Mockups/sticker.png" alt="Sticker MUCHO">
+                </div>
+                <div class="carousel-slide carousel-slide--obj">
+                    <img src="Mockups/precinto.png" alt="Precinto MUCHO">
+                </div>
+                <!-- Set 2 — duplicado para loop infinito -->
+                <div class="carousel-slide carousel-slide--banner">
+                    <img src="img/Banner2.png" alt="MUCHO Banner">
+                </div>
+                <div class="carousel-slide carousel-slide--obj">
+                    <img src="Mockups/anillo.png" alt="Anillo MUCHO">
+                </div>
+                <div class="carousel-slide carousel-slide--obj">
+                    <img src="Mockups/espejo1.png" alt="Espejo MUCHO">
+                </div>
+                <div class="carousel-slide carousel-slide--banner">
+                    <img src="img/Banner2.png" alt="MUCHO Banner">
+                </div>
+                <div class="carousel-slide carousel-slide--obj">
+                    <img src="Mockups/sticker.png" alt="Sticker MUCHO">
+                </div>
+                <div class="carousel-slide carousel-slide--obj">
+                    <img src="Mockups/precinto.png" alt="Precinto MUCHO">
+                </div>
+            </div>
+        </div>
+<section id="tickets" data-aos>
+            <div class="ticket-texture"></div>
+            <div class="section-container">
+                <h2 class="section-title">PRÓXIMAS<br>FECHAS</h2>
+                <div class="ticket-card">
+                    <div class="ticket-flyer">
+                        <img src="Flyers/Mucho-post.png" alt="Flyer MUCHO VOL. 1">
+                    </div>
+                    <div class="ticket-info">
+                        <h3>MUCHO VOL. 1</h3>
+                        <p>VIERNES 16 DE MAYO | 23:59 HS</p>
+                    </div>
+                    <div class="ticket-actions">
+                        <a href="#" class="buy-button sticker-btn" aria-label="Comprar entradas para MUCHO Vol 1">CONSEGUIR ENTRADAS <span class="plus-icon">+</span></a>
+                    </div>
+                </div>
+                <div class="ticket-card">
+                    <div class="ticket-flyer">
+                        <img src="Flyers/Mucho-post.png" alt="Flyer MUCHO VOL. 2">
+                    </div>
+                    <div class="ticket-info">
+                        <h3>MUCHO VOL. 2</h3>
+                        <p>VIERNES 20 DE JUNIO | 23:59 HS</p>
+                    </div>
+                    <div class="ticket-actions">
+                        <a href="#" class="buy-button sticker-btn" aria-label="Comprar entradas para MUCHO Vol 2">CONSEGUIR ENTRADAS <span class="plus-icon">+</span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-separator">+</div>
+
+        <section id="shoots">
+            <div class="section-container">
+                <div class="shoots-header" data-aos>
+                    <h2 class="section-title">SHOOTS</h2>
+                    <a href="https://drive.google.com/drive/folders/1ap5UzukVTOYg0bQVZVYXQ8vRUXN9bAA7" target="_blank" class="buscate-sticker sticker-btn">
+                        BUSCATE <span class="plus-icon">+</span>
+                    </a>
+                </div>
+                
+                <div class="editorial-gallery" id="gallery">
+                    <div class="gallery-card" data-aos>
+                        <div class="card-image">
+                            <img src="img/@reniganci.ph-94.jpg" alt="Shoot 1" loading="lazy">
+                        </div>
+                        <div class="card-overlay">
+                            <span class="view-label">+</span>
+                        </div>
+                    </div>
+                    <div class="gallery-card" data-aos>
+                        <div class="card-image">
+                            <img src="img/@reniganci.ph-156.jpg" alt="Shoot 2" loading="lazy">
+                        </div>
+                        <div class="card-overlay">
+                            <span class="view-label">+</span>
+                        </div>
+                    </div>
+                    <div class="gallery-card" data-aos>
+                        <div class="card-image">
+                            <img src="img/@reniganci.ph-164.jpg" alt="Shoot 3" loading="lazy">
+                        </div>
+                        <div class="card-overlay">
+                            <span class="view-label">+</span>
+                        </div>
+                    </div>
+                    <div class="gallery-card" data-aos>
+                        <div class="card-image">
+                            <img src="img/@reniganci.ph-203.jpg" alt="Shoot 4" loading="lazy">
+                        </div>
+                        <div class="card-overlay">
+                            <span class="view-label">+</span>
+                        </div>
+                    </div>
+                    <div class="gallery-card" data-aos>
+                        <div class="card-image">
+                            <img src="img/@reniganci.ph-204.jpg" alt="Shoot 5" loading="lazy">
+                        </div>
+                        <div class="card-overlay">
+                            <span class="view-label">+</span>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <div class="section-separator">+</div>
+
+        <section id="playlist" data-aos>
+            <div class="section-container">
+                <h2 class="section-title">THE VIBE</h2>
+                <div class="ticket-card" style="display:block; padding: 3rem;">
+                    <div class="spotify-container">
+                        <iframe style="border-radius:0" src="https://open.spotify.com/embed/playlist/5soTexJ4DcRO94MQ0frsTQ?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-separator">+</div>
+
+        <section id="nosotros" data-aos>
+            <div class="nosotros-magazine">
+                <h2 class="magazine-title">NOSOTROS</h2>
+                <span class="accent-italic">Recuerdos que todavía vibran...</span>
+                <div class="magazine-content">
+                    <p class="magazine-p"><strong>FIESTA MUCHO</strong> no es solo una fiesta, es un refugio para los que extrañan el <strong>perreo del 2017</strong>. Esa época donde el trap y el reggaetón se fusionaron para crear himnos inmortales.</p>
+                    <p class="magazine-p">Nacimos en el corazón de la city con una misión clara: devolverle a la noche la <strong>suciedad chic</strong> y la nostalgia de los tiempos de Jowell & Randy, Plan B y el trap más crudo.</p>
+                    <p class="magazine-p">En MUCHO, el <strong>dress code es actitud</strong> y el único requisito es dejarse llevar por el bajo. Bienvenidos al club más picante de la ciudad.</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-separator">+</div>
+
+        <section id="contacto" data-aos>
+            <div class="section-container contacto-layout">
+                <div class="contacto-info">
+                    <h2 class="section-title">CONTACTO</h2>
+                    <a href="https://instagram.com" class="md-link" target="_blank" rel="noopener">MANDÁ UN MD ↗</a>
+                </div>
+                <div class="contacto-form-container">
+                    <form class="contacto-form" onsubmit="event.preventDefault();">
+                        <input type="text" placeholder="Nombre" required>
+                        <input type="email" placeholder="Email" required>
+                        <textarea placeholder="Mensaje" rows="4" required></textarea>
+                        <button type="submit" class="sticker-btn submit-btn">ENVIAR <span class="plus-icon">+</span></button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <img src="Logos/horizontal-violeta.png" alt="MUCHO" class="footer-logo-large">
+            <ul class="footer-links">
+                <li><a href="#tickets">Tickets</a></li>
+                <li><a href="#shoots">Shoots</a></li>
+                <li><a href="#playlist">Playlist</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <div class="footer-bottom">
+                <p>&copy; 2026 FIESTA MUCHO. ALL RIGHTS RESERVED.</p>
+                <div class="social-icons">
+                    <a href="#" class="social-icon">IG</a>
+                    <a href="#" class="social-icon">TK</a>
+                    <a href="#" class="social-icon">SP</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
